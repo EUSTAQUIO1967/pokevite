@@ -11,7 +11,6 @@
     <img
     v-if="pokemon.name"
       :src="pokemon.image"
-      height="250"
       class="card-img-top pt-2"
       alt="pokemon.name"
     />
@@ -26,8 +25,8 @@
     <div class="card-body">
       <h5 class="card-title text-center">{{ pokemon.name || '????' }}</h5>
       <hr />
-
-      <div class="row">
+        <div class="d-none d-md-block">
+              <div class="row">
         <section class="col">
           <strong>XP:</strong>
           <span>{{ pokemon.xp }}</span>
@@ -37,6 +36,8 @@
           <span>{{ pokemon.height }}</span>
         </section>
       </div>
+        </div>
+                
     </div>
   </div>
 </template>
@@ -47,6 +48,26 @@
             background: #e4d1a1;
              background: radial-gradient(circle, rgba(199, 192, 94, 0.8) 35%, rgb(162, 0, 255) 100%);
              min-height: 75vh;
+    }
+
+     .card-pokemon-selected img{
+            height: 250px;
+    }
+
+    @media (max-width: 768px) {
+        .card-pokemon-selected{
+            width: 45%;
+             min-height: 40vh;
+             margin: 0 auto 10px auto;
+         }
+
+        .card-pokemon-selected img{
+            height: 100px;
+        
+        }
+   
+
+
     }
 
 </style>

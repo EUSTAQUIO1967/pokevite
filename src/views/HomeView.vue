@@ -106,4 +106,11 @@ const selectPokemon = async (pokemon) => {
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+@media (max-width:768px) {
+  .card-list {
+  max-height: 45vh;
+  
+}
+}
 </style>

@@ -35,7 +35,7 @@ let num = ref(0)
 
  <!-- FOOTER -->
   <footer class="bg-primary text-light">
-    <div>Design in {{ new Date().getFullYear() }} | Udemy Student | versão 1.0.0</div>
+    <div>Design in {{ new Date().getFullYear() }} | Udemy Student | v 1.0.1</div>
   </footer>
 </template>
 
